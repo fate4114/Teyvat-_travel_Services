@@ -495,3 +495,179 @@ h1, h2, h3, .logo { letter-spacing: 0.02em; }
         text-shadow: none;
     }
 }
+:root {
+    --dark-bg: #090909;
+    --dark-surface: #161616;
+    --dark-surface-2: #1e1e1e;
+    --dark-surface-3: #262626;
+    --dark-border: #333333;
+    --dark-border-strong: #4a4a4a;
+    --dark-text: #f2f2f2;
+    --dark-text-muted: #b8b8b8;
+    --dark-price: #a39a8c;
+}
+
+html, body {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+header,
+footer {
+    background-color: #0f0f0f;
+}
+
+header {
+    border-bottom: 1px solid var(--dark-surface-3);
+}
+
+nav a:hover {
+    color: var(--dark-price);
+}
+
+.destinations-section h2,
+.faq-section h2,
+.booking-section h2,
+.price-summary h3 {
+    color: var(--dark-text);
+}
+
+.card,
+.profile,
+.package-details,
+.faq-section,
+.booking-section {
+    background-color: var(--dark-surface);
+    border: 1px solid var(--dark-border);
+    border-radius: 28px;
+    box-shadow: none;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.card h3,
+.profile h2,
+.package-details h2,
+.package-details h3 {
+    color: var(--dark-text);
+}
+
+.card p,
+.profile p,
+.package-details p,
+.package-details li,
+.nation-header p {
+    color: var(--dark-text-muted);
+}
+
+.price-badge {
+    background-color: transparent;
+    color: var(--dark-price);
+    padding: 0;
+}
+
+.btn {
+    background-color: var(--dark-surface-3);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-border-strong);
+}
+
+.btn:hover {
+    background-color: #333333;
+}
+
+.filter-btn {
+    background-color: transparent;
+    color: var(--dark-text);
+    border-color: var(--dark-border-strong);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: var(--dark-text);
+    color: var(--dark-bg);
+}
+
+details,
+.faq-item {
+    background-color: var(--dark-surface-3) !important;
+    border-color: var(--dark-border-strong) !important;
+}
+
+details[open] {
+    background-color: var(--dark-surface-3);
+    border-color: var(--dark-border-strong);
+}
+
+summary,
+.faq-item h3 {
+    color: var(--dark-text) !important;
+}
+
+details p,
+.faq-item p {
+    color: var(--dark-text-muted) !important;
+}
+
+.form-tabs {
+    border-bottom-color: var(--dark-border);
+}
+
+.tab-btn {
+    background-color: var(--dark-surface-3);
+    color: var(--dark-text);
+}
+
+.tab-btn.active {
+    background-color: var(--dark-text);
+    color: var(--dark-bg);
+}
+
+.form-group label {
+    color: var(--dark-text);
+}
+
+.form-group input,
+.form-group select,
+textarea {
+    background-color: var(--dark-surface-2);
+    color: var(--dark-text);
+    border-color: var(--dark-border-strong) !important;
+    color-scheme: dark;
+}
+
+.error-msg {
+    color: #ff6b5e;
+}
+
+.price-summary {
+    background-color: var(--dark-surface-2);
+    border-left-color: var(--dark-price);
+}
+
+.price-summary p:not(#discountRow):not(#monthlyBreakdown) {
+    color: var(--dark-text-muted) !important;
+}
+
+#receiptContainer,
+#inquiryReceiptContainer {
+    background-color: var(--dark-surface-2) !important;
+    color: var(--dark-text);
+}
+
+.booking-cta {
+    background-color: var(--dark-surface) !important;
+    border: 1px solid var(--dark-border);
+    border-radius: 28px !important;
+    box-shadow: none !important;
+}
+
+.booking-cta h2 {
+    color: var(--dark-text);
+}
+
+.booking-cta p {
+    color: var(--dark-text-muted) !important;
+}
